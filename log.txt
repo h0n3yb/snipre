@@ -1,0 +1,222 @@
+INFO:root:RUNNING IN PROD MODE
+[32mINFO[0m:     Will watch for changes in these directories: ['C:\\Users\\ORBITALFOX\\Documents\\proprun']
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     Started reloader process [[36m[1m4212[0m] using [36m[1mWatchFiles[0m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\ORBITALFOX\Documents\proprun\service.py", line 1, in <module>
+    from fastapi import FastAPI, HTTPException
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\fastapi\__init__.py", line 7, in <module>
+    from .applications import FastAPI as FastAPI
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\fastapi\applications.py", line 16, in <module>
+    from fastapi import routing
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\fastapi\routing.py", line 22, in <module>
+    from fastapi import params
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\fastapi\params.py", line 5, in <module>
+    from fastapi.openapi.models import Example
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\fastapi\openapi\models.py", line 315, in <module>
+    class PathItem(BaseModelWithConfig):
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_model_construction.py", line 205, in __new__
+    complete_model_class(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_model_construction.py", line 534, in complete_model_class
+    schema = cls.__get_pydantic_core_schema__(cls, handler)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\main.py", line 643, in __get_pydantic_core_schema__
+    return handler(source)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 512, in generate_schema
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 784, in _generate_schema_inner
+    return self._model_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in _model_schema
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in <dictcomp>
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 947, in _generate_md_field_schema
+    common_field = self._common_field_schema(name, field_info, decorators)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1134, in _common_field_schema
+    schema = self._apply_annotations(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1890, in _apply_annotations
+    schema = get_inner_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1871, in inner_handler
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 871, in match_type
+    return self._match_generic_type(obj, origin)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 895, in _match_generic_type
+    return self._union_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1207, in _union_schema
+    choices.append(self.generate_schema(arg))
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 507, in generate_schema
+    from_property = self._generate_schema_from_property(obj, obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 679, in _generate_schema_from_property
+    schema = get_schema(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\main.py", line 643, in __get_pydantic_core_schema__
+    return handler(source)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 784, in _generate_schema_inner
+    return self._model_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in _model_schema
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in <dictcomp>
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 947, in _generate_md_field_schema
+    common_field = self._common_field_schema(name, field_info, decorators)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1134, in _common_field_schema
+    schema = self._apply_annotations(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1890, in _apply_annotations
+    schema = get_inner_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1871, in inner_handler
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 871, in match_type
+    return self._match_generic_type(obj, origin)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 895, in _match_generic_type
+    return self._union_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1207, in _union_schema
+    choices.append(self.generate_schema(arg))
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 512, in generate_schema
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 867, in match_type
+    return self._apply_annotations(source_type, annotations)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1890, in _apply_annotations
+    schema = get_inner_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1972, in new_handler
+    schema = metadata_get_schema(source, get_inner_schema)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_std_types_schema.py", line 316, in __get_pydantic_core_schema__
+    items_schema = handler.generate_schema(self.item_source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 97, in generate_schema
+    return self._generate_schema.generate_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 512, in generate_schema
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 871, in match_type
+    return self._match_generic_type(obj, origin)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 895, in _match_generic_type
+    return self._union_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1207, in _union_schema
+    choices.append(self.generate_schema(arg))
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 507, in generate_schema
+    from_property = self._generate_schema_from_property(obj, obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 679, in _generate_schema_from_property
+    schema = get_schema(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\main.py", line 643, in __get_pydantic_core_schema__
+    return handler(source)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 784, in _generate_schema_inner
+    return self._model_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in _model_schema
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in <dictcomp>
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 947, in _generate_md_field_schema
+    common_field = self._common_field_schema(name, field_info, decorators)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1134, in _common_field_schema
+    schema = self._apply_annotations(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1890, in _apply_annotations
+    schema = get_inner_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1871, in inner_handler
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 871, in match_type
+    return self._match_generic_type(obj, origin)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 895, in _match_generic_type
+    return self._union_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1207, in _union_schema
+    choices.append(self.generate_schema(arg))
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 507, in generate_schema
+    from_property = self._generate_schema_from_property(obj, obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 679, in _generate_schema_from_property
+    schema = get_schema(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\main.py", line 643, in __get_pydantic_core_schema__
+    return handler(source)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 784, in _generate_schema_inner
+    return self._model_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in _model_schema
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 591, in <dictcomp>
+    {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 947, in _generate_md_field_schema
+    common_field = self._common_field_schema(name, field_info, decorators)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1134, in _common_field_schema
+    schema = self._apply_annotations(
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1890, in _apply_annotations
+    schema = get_inner_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1871, in inner_handler
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 871, in match_type
+    return self._match_generic_type(obj, origin)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 895, in _match_generic_type
+    return self._union_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1207, in _union_schema
+    choices.append(self.generate_schema(arg))
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 512, in generate_schema
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 867, in match_type
+    return self._apply_annotations(source_type, annotations)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1890, in _apply_annotations
+    schema = get_inner_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 83, in __call__
+    schema = self._handler(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1972, in new_handler
+    schema = metadata_get_schema(source, get_inner_schema)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_std_types_schema.py", line 529, in __get_pydantic_core_schema__
+    values_schema = handler.generate_schema(self.values_source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 97, in generate_schema
+    return self._generate_schema.generate_schema(source_type)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 512, in generate_schema
+    schema = self._generate_schema_inner(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 789, in _generate_schema_inner
+    return self.match_type(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 871, in match_type
+    return self._match_generic_type(obj, origin)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 895, in _match_generic_type
+    return self._union_schema(obj)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 1207, in _union_schema
+    choices.append(self.generate_schema(arg))
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 514, in generate_schema
+    metadata_js_function = _extract_get_pydantic_json_schema(obj, schema)
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_generate_schema.py", line 2234, in _extract_get_pydantic_json_schema
+    if hasattr(tp, '__origin__') and not isinstance(tp, type(Annotated[int, 'placeholder'])):
+  File "C:\Users\ORBITALFOX\Documents\proprun\venv-api\lib\site-packages\pydantic\_internal\_model_construction.py", line 234, in __getattr__
+    private_attributes = self.__dict__.get('__private_attributes__')
+KeyboardInterrupt
+[32mINFO[0m:     Stopping reloader process [[36m[1m4212[0m]
